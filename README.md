@@ -1,7 +1,13 @@
 # css-critical
 Escribo el gulpfile.js necesario para sacar el css critical de una pagina online y guardarlo en un archivo en local.
 
-#Codigo para sacar css critical con GULP
+# Instalacion de la dependencia necesaria
+
+```
+$ npm install --save critical
+```
+
+# Codigo para sacar css critical con GULP
 
 ```
 var gulp = require('gulp');
