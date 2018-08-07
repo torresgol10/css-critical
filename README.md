@@ -4,6 +4,14 @@ Escribo el gulpfile.js necesario para sacar el css critical de una pagina online
 #Codigo para sacar css critical con GULP
 
 ```
+var gulp = require('gulp');
+var critical = require('critical');
+
+gulp.task('critical', ['generate'], function () {
+    gulp.src(['./css/critical-*.css'])
+        .pipe(gulp.dest('.'));
+});
+
 gulp.task('generate', function () {
     critical.generate({
         base: './',
